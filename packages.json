@@ -1,0 +1,10 @@
+{
+  "recordrtc": "5.1.1",
+  "sync-fs": "1.0.1",
+  "buffer": "3.4.3",
+
+  "fluent-ffmpeg": "2.0.1",
+  "fibers": "1.0.6"
+
+
+}

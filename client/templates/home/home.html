@@ -1,0 +1,31 @@
+<template name="home">
+  <h2>Video CV</h2>
+  <input type="text" id="videoTime" placeholder="Video Time ?sec" />
+  <button id="start-recording">Start Recording</button>
+  <button id="stop-recording" disabled="">Stop Recording</button>
+  <hr>
+
+  <div id="videos-container">
+    <video id="camera-preview" controls style="border: 1px solid rgb(15, 158, 238); width: 30%; height:30%;;">
+
+    </video>
+  </div>
+
+
+
+<div style="display:none">
+  <div id="download">
+  </div>
+  <div id="result">
+  </div>
+
+  Result:
+  <hr>
+  <div id="inner">
+    <video id="videoPlayer" controls style="border: 1px solid rgb(15, 158, 238); width: 50%; height:50%;display:none;" autoplay ontimeupdate="videoTimeUpdated();" onseeking="videoSeek();" onpause="videoPlayerPaused();" onplay="videoPlayerPlay();" src="/cfs/files/records/YtKWcbuAc5hucEDk8/merged-MdCiGiK7QfwAqNd9y-PyeJuh4ZeZM3HZxYh.avi">
+
+    </video>
+  </div>
+</div>
+
+</template>
